@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz - Learn Piano</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .quiz-container {
+      max-width: 700px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .quiz-container h2 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .quiz-container .question {
+      margin-bottom: 20px;
+    }
+    .quiz-container label {
+      display: block;
+      margin-bottom: 8px;
+    }
+    #result {
+      margin-top: 20px;
+      font-weight: bold;
+      color: green;
+      text-align: center;
+    }
+    .btn {
+      display: block;
+      margin: 20px auto 0;
+      padding: 12px 24px;
+      background-color: #f4d03f;
+      color: #000;
+      border: none;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #d4ac0d;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">🎹 Learn Piano</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Piano</a></li>
+        <li><a href="learn.html">Learn</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="quiz.html" class="active">Quiz</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Quiz Section -->
+  <section class="quiz-container">
+    <h2>🎯 Piano Basics Quiz</h2>
+    
+    <form id="quizForm">
+      <div class="question">
+        <p>1. What is the name of the white key between A and C?</p>
+        <label><input type="radio" name="q1" value="B"> B</label>
+        <label><input type="radio" name="q1" value="D"> D</label>
+        <label><input type="radio" name="q1" value="G"> G</label>
+      </div>
+
+      <div class="question">
+        <p>2. How many black keys are in each octave?</p>
+        <label><input type="radio" name="q2" value="5"> 5</label>
+        <label><input type="radio" name="q2" value="7"> 7</label>
+        <label><input type="radio" name="q2" value="2"> 2</label>
+      </div>
+
+      <div class="question">
+        <p>3. Which finger number is the thumb?</p>
+        <label><input type="radio" name="q3" value="1"> 1</label>
+        <label><input type="radio" name="q3" value="3"> 3</label>
+        <label><input type="radio" name="q3" value="5"> 5</label>
+      </div>
+
+      <button type="button" class="btn" onclick="checkQuiz()">Show Result</button>
+      <p id="result"></p>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Learn Piano | Designed by Abudallah</p>
+  </footer>
+
+  <!-- External JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
